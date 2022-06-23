@@ -1,0 +1,9 @@
+<div class="formContainer">
+	<form>
+		<input type="text" name="task" id="task" placeholder="Tarea" 
+			[(ngModel)]="taskData.title">
+		<input type="text" name="description" id="description" placeholder="description" 
+			[(ngModel)]="taskData.description">
+		<input type="submit" value="Añadir" (click)="onClick()">
+	</form>
+</div>
