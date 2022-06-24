@@ -1,0 +1,43 @@
+div.dflex {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+section {
+	border: 2px solid darksalmon;
+	border-radius: 5px;
+}
+
+h3 {
+	text-align: center;
+}
+
+.group {
+	display: flex;
+}
+
+.group div {
+	margin: 1rem;
+	background-color: green;
+}
+
+.group .size {
+	width: 100px;
+	height: 100px;
+}
+
+.group .shape {
+	border-radius: 50%;
+}
+
+.group .red {
+	background-color: red;
+}
+
+.group .blue {
+	background-color: blue;
+}
+
+.group .green {
+	background-color: green;
+}

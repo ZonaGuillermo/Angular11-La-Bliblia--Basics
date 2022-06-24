@@ -1,0 +1,23 @@
+<!-- Usamos Event Binding para hacer el cambio interactivo -->
+<div>
+	<button (click)="colorChange('b')">Azul</button>
+	<button (click)="colorChange('r')">Rojo</button>
+	<button (click)="colorChange('y')">Amarillo</button>
+</div>
+
+<!-- Usamos Two Way Binding con [(ngModel)] para hacer dinámico el cambio -->
+<div>
+	<input type="text" [(ngModel)]="paragraphStyle.color">
+</div>
+
+<div>
+	<input type="range" min="12" max="200" step="2" (input)="onInput($event)">
+	<input type="text" [(ngModel)]="paragraphStyle.fontSize" size="3">
+</div>
+
+<!-- Asignamos valores a [ngStyle] mediante un objeto literal -->
+<p [ngStyle]="{ color: 'red', fontSize: '1rem' }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente officia vitae, ab recusandae quos?</p>
+
+<!-- Asignamos valores a [ngStyle] mediante una propiedad de nuestra clase de componente -->
+<p [ngStyle]="paragraphStyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente officia vitae, ab recusandae quos?</p>
+

@@ -1,0 +1,36 @@
+<div class="dflex">
+	<section>
+		<h3>Pasando clases por STRING</h3>
+		<div class="group">
+			<div class="size" [ngClass]="'shape red'"></div>
+			<div class="size" [ngClass]="'blue'"></div>
+			<div [ngClass]="'size shape'"></div>
+		</div>
+	</section>
+	
+	<section>
+		<h3>Pasando clases por ARRAY</h3>
+		<!-- No podemos personalizar cada div ya que todos comparten el mismo array -->
+		<div class="group">
+			<div [ngClass]="arrClass"></div>
+			<div [ngClass]="arrClass" (mouseover)="onMouseOver($event)" (mouseout)="onMouseOut($event)"></div>
+			<div [ngClass]="arrClass"></div>
+		</div>
+	</section>
+	
+	<section>
+		<h3>Pasando clases por OBJETO</h3>
+		<div class="group">
+			<div [ngClass]="{ size: true, shape: true, red: true, blue: false }"></div>
+			<div [ngClass]="
+				{ 
+					size: true, 
+					shape: true, 
+					red: false, 
+					blue: (selectedColor === 'b') 
+				}"></div>
+			<div [ngClass]="{ size: true, shape: true, red: false, blue: false }"></div>
+		</div>
+	</section>
+</div>
+

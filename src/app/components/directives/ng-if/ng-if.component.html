@@ -1,0 +1,46 @@
+<!-- Caso 1 -->
+<p *ngIf="true">Este parrafo saldrá ya que tiene true en el ngIf. El siguiente no saldrá.</p>
+
+<p *ngIf="false">Este parrafo no saldrá ya que tiene el ngIf en false</p>
+
+<hr>
+<!-- Caso 2 -->
+
+<button (click)="onClick()">Mostrar / Oculpar</button>
+
+<p *ngIf="showHideParagraph">Este parrafo alterna entre verse o no al pulsar el botón de arriba.</p>
+
+<hr>
+<!-- Caso 3: if / else -->
+
+<button (click)="showIfElse()">Mostrar If / Else</button>
+
+<p *ngIf="IfElseParagraph; else elseBlock">Parrafo del IF. Se ve si la variable IfElseParagraph es true.</p>
+
+<ng-template #elseBlock>
+	<p>Parrafo del ELSE. Se ve en lugar del parrafo del If</p>
+</ng-template>
+
+
+<hr>
+<!-- Caso 3: if / then / else -->
+
+<button (click)="showIfThenElse()">Mostrar Then / Else</button>
+
+<p *ngIf="IfThenElseParagraph; then thenBlock else elseBlock">Parrafo del IF. Este parrafo no se verá nunca ya que se usa el THEN.</p>
+
+<ng-template #thenBlock>
+	<p>Parrafo del THEN. Se ve en lugar del parrafo del IF</p>
+</ng-template>
+
+<ng-template #elseBlock>
+	<p>Parrafo del ELSE. Se ve en lugar del parrafo del THEN</p>
+</ng-template>
+
+
+<hr>
+<!-- Caso 4: Código Optimo - Nos ahorramos THEN y ELSE -->
+<button (click)="optimalCode()">Mostrar / Ocultar</button>
+
+<p *ngIf="show">Este parrafo se ve si show es true</p>
+<p *ngIf="!show">En cambio, este otro se ve cuando show es false</p>

@@ -12,6 +12,11 @@ import { CronoOutputComponent } from './components/crono-output/crono-output.com
 import { TodoSimpleComponent } from './components/todo-simple/todo-simple.component';
 import { FormComponent } from './components/todo-simple/form/form.component';
 import { ListComponent } from './components/todo-simple/list/list.component';
+import { DirectivesComponent } from './components/directives/directives.component';
+import { NgStyleComponent } from './components/directives/ng-style/ng-style.component';
+import { NgClassComponent } from './components/directives/ng-class/ng-class.component';
+import { NgIfComponent } from './components/directives/ng-if/ng-if.component';
+import { NgForComponent } from './components/directives/ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { ListComponent } from './components/todo-simple/list/list.component';
     CronoOutputComponent,
     TodoSimpleComponent,
     FormComponent,
-    ListComponent
+    ListComponent,
+    DirectivesComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    NgIfComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

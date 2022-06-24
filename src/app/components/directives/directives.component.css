@@ -1,0 +1,10 @@
+.container {
+	margin: 1rem;
+	padding: 1rem;
+	border: 10px solid tomato;
+	border-radius: 1rem;
+}
+
+h2 {
+	border-bottom: 1px solid tomato;
+}
