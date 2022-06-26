@@ -1,0 +1,10 @@
+<div class="task" *ngFor="let task of tasks; let i = index" [ngClass]="{ done: task.done }">
+		<div class="dataTask">
+			<h4>{{ task.title }}</h4>
+			<p>{{ task.description }}</p>
+		</div>
+		<div class="actions">
+			<button (click)="onDone(task)">{{ task.done? '✅' : '⬜' }}</button>
+			<button (click)="onDelete(i)">❌</button>
+		</div>
+</div>

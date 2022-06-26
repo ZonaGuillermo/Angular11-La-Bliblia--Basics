@@ -1,0 +1,9 @@
+<form>
+	<label for="title">Título</label>
+	<input type="text" name="title" placeholder="Título" [(ngModel)]="task.title">
+	
+	<label for="description">Descripción</label>
+	<input type="description" name="description" placeholder="Descripción" [(ngModel)]="task.description">
+
+	<input type="submit" value="Añadir" (click)="onClick()">
+</form>

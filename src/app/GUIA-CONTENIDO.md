@@ -10,6 +10,9 @@ Las prácticas realizadas en el curso siguen este orden:
 6. Componente todo-simple (components/todo-simple)
 	- @Inputs, @Outputs, [(ngModel)]
 7. Componente directives (components/directives)
+	- [ngStyle], [ngClass], *ngIf, *ngFor, [ngSwitch], *ngSwitchCase
+8. Componente todo-complex (compoents/todo-complex)
+9. Componente cash-register (components/cash-register)
 
 <br>
 <br>
@@ -36,5 +39,8 @@ Las prácticas realizadas en el curso siguen este orden:
 
 7. Directivas
 	- Atributo: [ngStyle], [ngClass]
-	- Estructurales: *ngIf, *ngFor, *ngSwitch
+	- Estructurales: *ngIf, *ngFor, [ngSwitch]
 	- Custom
+
+99. Otros
+	- {{ array | json }}

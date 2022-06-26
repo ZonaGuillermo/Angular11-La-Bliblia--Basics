@@ -1,0 +1,16 @@
+<section [ngSwitch]="numberOption">
+	<p *ngSwitchCase="1">Opcion 1 - Lorem ipsum dolor sit elit. Labore, animi?</p>
+	<p *ngSwitchCase="2">Opcion 2 - Porro nihil eos omnis? Unde saepe sunt sit.</p>
+	<p *ngSwitchCase="3">Opcion 3 - Quam numquam ad, accusamus minus quod rerum in!</p>
+	<p *ngSwitchCase="4">Opcion 4 - Libero expeditasit molestiae quibusdam velit!</p>
+	<p *ngSwitchDefault>Opcion Default - Consequuntur eum, aut omnis modi earum?</p>
+</section>
+
+<!-- Si usamos strings OJO CON LAS COMILLAS SIMPLES, si nó no funcionará -->
+<section [ngSwitch]="stringOption">
+	<p *ngSwitchCase="'uno'">Opcion 1 - Lorem ipsum dolor sit elit. Labore, animi?</p>
+	<p *ngSwitchCase="'dos'">Opcion 2 - Porro nihil eos omnis? Unde saepe sunt sit.</p>
+	<p *ngSwitchCase="'tres'">Opcion 3 - Quam numquam ad, accusamus minus quod rerum in!</p>
+	<p *ngSwitchCase="'cuatro'">Opcion 4 - Libero expeditasit molestiae quibusdam velit!</p>
+	<p *ngSwitchDefault>Opcion Default - Consequuntur eum, aut omnis modi earum?</p>
+</section>

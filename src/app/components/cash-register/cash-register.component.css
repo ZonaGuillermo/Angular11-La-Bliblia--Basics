@@ -1,0 +1,45 @@
+.container {
+	display: flex;
+	margin: 0 auto;
+	padding: 1rem;
+	width: 80%;
+	background-color:lightblue;
+	font-family: tahoma, sans-serif;
+}
+
+.container > * {
+	padding: 0.5rem;
+}
+
+.products {
+	width: 70%;
+	border: 1px solid tomato;
+}
+
+.products > * :not(h2) {
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	background-color: #fef;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.products h2 {
+	margin-bottom: 0.5rem;
+	padding: 0.2rem 0.2rem 0.2rem 0.5rem;
+}
+
+.food h2 {
+	background-color: hsl(145, 75%, 75%);
+}
+
+.drink h2 {
+	background-color: hsl(50, 75%, 75%);
+}
+
+.ticket {
+	min-width: 300px;
+	max-width: 30%;
+	border: 1px solid green;
+}

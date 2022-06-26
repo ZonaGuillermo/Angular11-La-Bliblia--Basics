@@ -1,0 +1,25 @@
+<div class="total">
+	<h3>Total</h3>
+	<h2>{{ totalTicket }} €</h2>
+</div>
+
+<table>
+	<thead>
+		<th>Nombre</th>
+		<th>Precio/ud</th>
+		<th>Cantidad</th>
+		<th>Subtotal</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let productTicket of arrProductsTicket">
+			<td>{{ productTicket.name }}</td>
+			<td>{{ productTicket.price }} €</td>
+			<td>
+				<button (click)="productTicket.amountUp(); onClick()">➕</button>
+				{{ productTicket.amount }} 
+				<button (click)="productTicket.amountDown(); onClick()">➖</button>
+			</td>
+			<td>{{ productTicket.subtotal }} €</td>
+		</tr>
+	</tbody>
+</table>

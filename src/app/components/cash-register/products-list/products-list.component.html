@@ -1,0 +1,8 @@
+<div class="card" *ngFor="let product of productsList" (click)="onClick(product)">
+	<img [src]="product.image" alt="">
+	<!-- <img [src]="product.image" [alt]="product.name"> -->
+	<div class="data-card">
+		<h4>{{ product.name }}</h4>
+		<p>{{ product.price }} €</p>
+	</div>
+</div>

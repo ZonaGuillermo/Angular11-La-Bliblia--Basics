@@ -1,0 +1,15 @@
+<div class="container">
+	<div class="products">
+		<div class="food">
+			<h2>Comida</h2>
+			<app-products-list [productsList]="arrFood" (sendProduct)="onReceiveProduct($event)"></app-products-list>
+		</div>
+		<div class="drink">
+			<h2>Bebida</h2>
+			<app-products-list [productsList]="arrDrink" (sendProduct)="onReceiveProduct($event)"></app-products-list>
+		</div>
+	</div>
+	<div class="ticket">
+		<app-ticket-order [arrProductsTicket]="arrProductsSelected" [totalTicket]="total" (sendArrProductsTicket)="onReceiveArrProductsTicket($event)"></app-ticket-order>
+	</div>
+</div>

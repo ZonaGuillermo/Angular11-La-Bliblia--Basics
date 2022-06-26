@@ -17,6 +17,13 @@ import { NgStyleComponent } from './components/directives/ng-style/ng-style.comp
 import { NgClassComponent } from './components/directives/ng-class/ng-class.component';
 import { NgIfComponent } from './components/directives/ng-if/ng-if.component';
 import { NgForComponent } from './components/directives/ng-for/ng-for.component';
+import { NgSwitchComponent } from './components/directives/ng-switch/ng-switch.component';
+import { TodoComplexComponent } from './components/todo-complex/todo-complex.component';
+import { FormComplexComponent } from './components/todo-complex/form-complex/form-complex.component';
+import { ListComplexComponent } from './components/todo-complex/list-complex/list-complex.component';
+import { CashRegisterComponent } from './components/cash-register/cash-register.component';
+import { ProductsListComponent } from './components/cash-register/products-list/products-list.component';
+import { TicketOrderComponent } from './components/cash-register/ticket-order/ticket-order.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +40,14 @@ import { NgForComponent } from './components/directives/ng-for/ng-for.component'
     NgStyleComponent,
     NgClassComponent,
     NgIfComponent,
-    NgForComponent
+    NgForComponent,
+    NgSwitchComponent,
+    TodoComplexComponent,
+    FormComplexComponent,
+    ListComplexComponent,
+    CashRegisterComponent,
+    ProductsListComponent,
+    TicketOrderComponent
   ],
   imports: [
     BrowserModule,
