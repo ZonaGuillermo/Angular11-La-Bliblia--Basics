@@ -13,6 +13,9 @@ Las prácticas realizadas en el curso siguen este orden:
 	- [ngStyle], [ngClass], *ngIf, *ngFor, [ngSwitch], *ngSwitchCase
 8. Componente todo-complex (compoents/todo-complex)
 9. Componente cash-register (components/cash-register)
+10. Componente shopping-list (components/shopping-list) <--- POR HACER
+
+
 
 <br>
 <br>
@@ -40,7 +43,12 @@ Las prácticas realizadas en el curso siguen este orden:
 7. Directivas
 	- Atributo: [ngStyle], [ngClass]
 	- Estructurales: *ngIf, *ngFor, [ngSwitch]
-	- Custom
+	- Custom   <--- REPASAR
+		- elemRef
+		- render
+		- @HostListener
+		- @HostBinding
+		- @Input
 
 99. Otros
 	- {{ array | json }}
